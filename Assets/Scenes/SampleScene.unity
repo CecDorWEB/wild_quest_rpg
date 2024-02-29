@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 111079002}
   - component: {fileID: 111079004}
   - component: {fileID: 111079003}
+  - component: {fileID: 111079005}
   m_Layer: 0
   m_Name: TerrainUp
   m_TagString: Untagged
@@ -271,6 +272,42 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &111079005
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111079001}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &318405138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2818,7 @@ GameObject:
   - component: {fileID: 1213028756}
   - component: {fileID: 1213028757}
   m_Layer: 0
-  m_Name: Heartlist
+  m_Name: HeartList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3087,7 +3124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyCount: 0
   health: 5
-  heartPrefab: {fileID: 6589200954886010783, guid: e9b45e0ac323244a9a48e280a4a8d3c5, type: 3}
+  heartPrefab: {fileID: 8334262828858437217, guid: e9b45e0ac323244a9a48e280a4a8d3c5, type: 3}
   heartParent: {fileID: 1213028756}
   moneyTxt: {fileID: 2033394349}
 --- !u!1 &1969667287
@@ -3372,7 +3409,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1311655520}
   - {fileID: 1160363180}
+  - {fileID: 1311655520}
   - {fileID: 695868691}
   - {fileID: 1969667290}
