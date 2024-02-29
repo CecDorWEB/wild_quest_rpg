@@ -5,14 +5,23 @@ using UnityEngine.InputSystem;
 
 public class Chest : MonoBehaviour
 {
+    [SerializeField] private Item[] content;
+
     [SerializeField] private SpriteRenderer[] graphisms;
     [SerializeField] private Sprite[] openSprite;
     [SerializeField] private Sprite[] closedSprite;
 
-    private GameManager manager;
-    private InputAction interactAction;
+
+
     public bool isReach = false;
+
     private bool open = false;
+
+    private GameManager manager;
+
+    private InputAction interactAction;
+
+   
 
     private void Start()
     {
@@ -37,7 +46,8 @@ public class Chest : MonoBehaviour
         private void Open()
     {
         open = true;
-        for(int i=0;i<graphisms.Length;i++)
+        EmptyChest();
+        for (int i=0;i<graphisms.Length;i++)
         {
             graphisms[i].sprite=openSprite[i];
         }
@@ -48,6 +58,15 @@ public class Chest : MonoBehaviour
         for(int i=0;i<graphisms.Length;i++)
         {
             graphisms[i].sprite=closedSprite[i];
+        }
+    }
+
+    private void EmptyChest()
+    {
+        foreach (var _item in content)
+        {
+            CharacterInfos.AddItem(_item._id, _item.number);
+            _item.number = 0;
         }
     }
 
