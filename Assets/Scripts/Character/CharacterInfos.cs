@@ -29,15 +29,30 @@ public class CharacterInfos : MonoBehaviour
         moneyTxt.text = " : " + moneyCount;
     }
 
-    private void InitHealth ()
+    private void InitHealth()
     {
         health = maxHealth;
 
-        for (int i = 0; 1 < maxHealth; i++)
+        for (int i = 0; i < maxHealth; i++)
         {
             Transform curHeart = Instantiate(heartPrefab);
             curHeart.SetParent(heartParent);
             heartsObj.Add(curHeart.gameObject);
         }
+    }
+
+    private void TakeDamage(int _damage)
+    {
+        health -= _damage;
+        for (int i = 1; i < maxHealth +1; i++){
+            if (i >= health){
+            heartsObj[i-1].SetActive(true);
+            }else{
+             heartsObj[i-1].SetActive(false);
+            }
+
+
+    }  
+    
     }
 }
