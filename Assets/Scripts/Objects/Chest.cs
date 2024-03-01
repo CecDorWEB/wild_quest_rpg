@@ -3,30 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Chest : MonoBehaviour
+public class Chest : InteractableObject
 {
     [SerializeField] private Item[] content;
 
     [SerializeField] private SpriteRenderer[] graphisms;
     [SerializeField] private Sprite[] openSprite;
     [SerializeField] private Sprite[] closedSprite;
+   
 
-
-
-    public bool isReach = false;
-
-    private bool open = false;
-
-    private GameManager manager;
-
-    private void Start()
-    {
-        manager = GameManager.GetInstance();
-
-        InputsManager.instance.interactionEvent.AddListener(Interact);
-    }
-
-    public void Interact()
+    public override void Interact()
     {
         if (isReach)
         {
@@ -57,22 +43,6 @@ public class Chest : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-        Debug.Log("poulet");
-        if (collision.gameObject.tag == "Player")
-        {
-            isReach = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            isReach = false;
-        }
-    }
-
+    
 
 }
