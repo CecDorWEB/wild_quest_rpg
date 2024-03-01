@@ -6100,16 +6100,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - charName: Villageois
-    content: " Dal'Heris, je suis boulevers\xE9 par ce qui s'est pass\xE9 \xE0 ta
-      famille. Je ne peux m\xEAme pas imaginer la douleur que tu ressens en ce moment."
+    content: " Dal'Heris, je suis boulevers\xE9 par ce qui arriv\xE9 \xE0 ta famille.
+      Je ne peux m\xEAme pas imaginer la douleur que tu ressens en ce moment."
     charSprite: {fileID: -587830412, guid: 0d9968f04a3bfcb428bb3263f65b92bf, type: 3}
   - charName: Dal'Heris
     content: "Merci, villageois tes paroles me r\xE9confortent."
     charSprite: {fileID: 1535311834, guid: 0d9968f04a3bfcb428bb3263f65b92bf, type: 3}
   - charName: Villageois
-    content: "Je te connais depuis que tu \xE9tais un enfant. Voir ce qui est arriv\xE9
-      \xE0 tes parents et \xE0 ta petite s\u0153ur, c'est juste... insoutenable.
-      Je suis l\xE0 pour toi,"
+    content: "Je te connais depuis que tu es enfant. Ce qui est arriv\xE9 \xE0 tes
+      parents et \xE0 ta petite s\u0153ur, c'est ... insoutenable. Je suis l\xE0
+      pour toi,"
     charSprite: {fileID: -587830412, guid: 0d9968f04a3bfcb428bb3263f65b92bf, type: 3}
   - charName: Villageois
     content: " si jamais tu as besoin de parler, ou m\xEAme d'un coup de main pour
@@ -6120,9 +6120,13 @@ MonoBehaviour:
     content: Merci....
     charSprite: {fileID: 1535311834, guid: 0d9968f04a3bfcb428bb3263f65b92bf, type: 3}
   - charName: Villageois
-    content: "Sois fort, Dal'Heris. Nous sommes tous derri\xE8re toi. Et rappelez-toi,
+    content: "Sois fort, Dal'Heris. Nous sommes tous derri\xE8re toi. Et rappelle-toi,
       m\xEAme dans les t\xE9n\xE8bres les plus profondes, il y a toujours une lueur
       d'espoir."
+    charSprite: {fileID: -587830412, guid: 0d9968f04a3bfcb428bb3263f65b92bf, type: 3}
+  - charName: Villageois
+    content: "Et petit conseil, n'h\xE9site pas \xE0 regarder dans les coffres, tu
+      y trouveras peut-\xEAtre des tr\xE9sors. Bon courage pour ton aventure !"
     charSprite: {fileID: -587830412, guid: 0d9968f04a3bfcb428bb3263f65b92bf, type: 3}
 --- !u!1 &1531424556
 GameObject:
