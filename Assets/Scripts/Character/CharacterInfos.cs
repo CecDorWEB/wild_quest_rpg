@@ -64,11 +64,10 @@ public class CharacterInfos : MonoBehaviour
     {
         health -= _damage;
         for (int i = 1; i < maxHealth + 1; i++) {
-            if (i >= health) {
-                heartsObj[i - 1].SetActive(true);
-            } else {
-                heartsObj[i - 1].SetActive(false);
-            }
+
+            bool _state = i <= health ? true : false;
+            
+            heartsObj[i - 1].SetActive(_state);
         }
     }
 
